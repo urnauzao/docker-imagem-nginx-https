@@ -1,0 +1,24 @@
+version: '3'
+services:
+    nginx:
+        build:
+            context: ./
+            args:
+                NGINX_VERSION: '1.25.2'
+                # https://hub.docker.com/_/nginx
+        image: yourusernamedockerhub/nginx
+        ports:
+            - '80:80'
+            - '443:443'
+        volumes:
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+            - ./nginx/sites-available:/etc/nginx/sites-available
+            - ./nginx/conf.d:/etc/nginx/conf.d
+            - ./nginx/letsencrypt:/etc/letsencrypt
+            - ./public:/var/www/public
+        networks:
+            - net_local
+
+networks:
+    net_local:
+        driver: bridge

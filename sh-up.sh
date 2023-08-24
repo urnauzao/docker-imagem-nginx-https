@@ -1,7 +1,3 @@
-# docker swarm init &&
-echo "docker swarm inicializado" &&
-# docker network create -d overlay --attachable net_swarm &&
-echo "rede net_swarm criada" &&
 docker compose -f docker-swarm.yml build &&
 echo "imagem buildada para execução" &&
 docker stack rm nginx &&

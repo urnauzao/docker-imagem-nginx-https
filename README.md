@@ -32,3 +32,9 @@ certbot --nginx
 ## Renovar certificado
 - Repita o mesmo passo da criação de certificado
 
+# Extras:
+🔹 Hostinger - Servidores/Hospedagem de sites [Ótimos Preços] + 20% de Desconto pelo Link:
+https://urnau.com.br/cupons/hostinger
+
+🔷 PLAYLIST: Curso Grátis de Deploy de aplicação Laravel em Produção:
+https://www.youtube.com/playlist?list=PLQsSC6fujdEncVWbJLTepdkrqSGfFiqcL
